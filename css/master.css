@@ -1367,6 +1367,7 @@ input:focus{
 }
 .social-info input{
     width: 100%;
+    height: 40.88px;
     margin-bottom: 10px;
     border: solid 1px #ccc;
     padding: 10px;
