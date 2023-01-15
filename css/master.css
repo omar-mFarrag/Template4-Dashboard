@@ -1350,10 +1350,12 @@ input:focus{
 }
 .social-info .socia-box{
     display: flex;
+    height: 100%;
+    position: relative;
 }
 .social-info i{
     width: 40px;
-    height: 40.88px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1367,7 +1369,7 @@ input:focus{
 }
 .social-info input{
     width: 100%;
-    height: 40.88px;
+    height: 100%;
     margin-bottom: 10px;
     border: solid 1px #ccc;
     padding: 10px;
