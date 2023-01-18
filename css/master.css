@@ -1390,4 +1390,136 @@ input:focus{
     margin-top: 10px;
 }
 /* End of Social Info */
+
+/* Strat of Widgets Control */
+.widgets-control{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.widgets-control h2{
+    margin-bottom: 10px;
+}
+.widgets-control p{
+    margin-bottom: 20px;
+}
+.wid-control-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.wid-control-content div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.wid-control-content input{
+    width: 18px;
+    height: 18px;
+}
+.wid-control-content input,
+.wid-control-content label{
+    cursor: pointer;
+}
+.wid-control-content label{
+    font-size: 16px;
+}
+/* End of Widgets Control */
+/* Start of Backup Manager */
+.backup-manager{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.backup-manager h2{
+    margin-bottom: 10px;
+}
+.backup-manager p{
+    margin-bottom: 20px;
+}
+.backup-manager .period{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px var(--main-gray);
+}
+.backup-manager .period .time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.period input{
+    appearance: none;
+    -webkit-appearance: none;
+    border: solid black 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.period label{
+    cursor: pointer;
+}
+.period input::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: #0075ff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: .3s;
+}
+.period input:checked{
+    border-color: #0075ff;
+}
+.period input:checked::before{
+    width: 10px;
+    height: 10px;
+}
+.backup-manager .servers{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding-top: 20px;
+}
+.backup-manager .server{
+    width: calc((100% - 40px) / 3 );
+}
+.backup-manager .server input{
+    appearance: none;
+}
+.backup-manager .server label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    transition: .3s;
+    font-size: 18px;
+}
+.backup-manager .server input:checked ~ label{
+    color: var(--main-blue);
+    border-color: var(--main-blue);
+}
+@media (max-width: 767px){
+    .backup-manager .servers{
+        flex-direction: column;
+    }
+    .backup-manager .server{
+        width: 100%;
+    }
+}
+/* End of Backup Manager */
 /* End of Setting page */
