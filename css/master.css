@@ -39,7 +39,6 @@ body{
     position: relative;
     transition: 0.3s;
     cursor: pointer;
-    margin-left: 20px;
 }
 .slide::before{
     font-family: "Font Awesome 6 Free";
