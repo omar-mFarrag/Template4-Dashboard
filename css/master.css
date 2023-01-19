@@ -63,7 +63,7 @@ body{
 .slide:checked::before{
     content: "\f00c";
     color: var(--main-blue);
-    left: 50px;
+    left: calc((100% - 28px));
 }
 /* End of Slide buttom Styling */
 
