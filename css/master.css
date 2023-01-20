@@ -1523,3 +1523,130 @@ input:focus{
 }
 /* End of Backup Manager */
 /* End of Setting page */
+
+
+
+/* Start of Profile Settings */
+/* Start of profile settings window */
+.profile-page-content{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+.profile-settings{
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+}
+.profile-settings .avatar-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border-right: solid var(--main-gray) 1px;
+    align-self: center;
+}
+.avatar-box img{
+    width: 120px;
+    margin-bottom: 10px;
+}
+.avatar-box span:not(:last-child){
+    margin: 10px 0px 15px 0px;
+    color: #888;
+}
+.avatar-box .level-prog{
+    height: 6px;
+    overflow: hidden;
+    margin: auto;
+    width: 70%;
+    background-color: #ccc;
+    border-radius: 6px;
+}
+.avatar-box .level-prog span{
+    display: block;
+    width: 70%;
+    background-color: var(--main-blue);
+    height: 6px;
+    border-radius: 6px;
+}
+.avatar-box .stars{
+    color: #f59e0b;
+    margin: 10px 0px;
+}
+.avatar-box span:last-child{
+    font-size: 14px;
+    color: #888;
+}
+
+
+.profile-settings-r{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eee;
+    transition: .3s;
+    align-items: center;
+    width: 100%;
+}
+.profile-settings-r h4{
+    color: #888;
+    width: 100%;
+    font-weight: normal;
+    font-size: 15px;
+}
+.genetal-information{
+    width: 100%;
+    border-bottom: solid 1px var(--main-gray);
+    padding: 20px;
+}
+.genetal-information:last-child{
+    border: none;
+}
+.General-info-box{
+    min-width: 250px;
+    padding: 10px 0px 0px;
+    font-size: 14px;
+    display: inline-block;
+}
+.General-info-box span:first-child{
+    color: #888;
+}
+.General-info-box input{
+    height: 20px;
+    margin-left: 0px;
+}
+.General-info-box input::before{
+    height: 15px;
+    width: 15px;
+    font-size: 11px;
+    top: 10px;
+    transform: translateY(-7.5px);
+    left: 3px;
+}
+.General-info-box input:checked:before{
+    left: calc(100% - 18px);
+}
+@media(max-width: 767px){
+    .profile-settings{
+        flex-direction: column;
+    }
+    .profile-settings .avatar-box{
+        border: none;
+    }
+    .profile-settings-r h4{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .profile-settings-r .genetal-information{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .profile-settings-r .genetal-information div{
+        text-align: center;
+    }
+}
+/* End of profile settings window */
+/* End of Profile Settings */
