@@ -1613,6 +1613,12 @@ input:focus{
 .General-info-box span:first-child{
     color: #888;
 }
+@media( max-width: 350px ){
+
+    .General-info-box span{
+        font-size: 13px;
+    }
+}
 .General-info-box input{
     height: 20px;
     margin-left: 0px;
@@ -1649,4 +1655,119 @@ input:focus{
     }
 }
 /* End of profile settings window */
+/* Start of My Skills Window */
+
+.profile-flex-section{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.my-skills{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+.my-skills p{
+    color: #888;
+    margin-top: 10px;
+}
+.my-skills-container{
+    margin-top: 20px;
+}
+.my-skills-box{
+    width: 100%;
+    padding: 15px 0px;
+}
+.my-skills-box:not(:last-child){
+    border-bottom: solid 1px var(--main-gray);
+}
+.my-skills-box span{
+    padding: 4px 10px;
+    background-color: var(--main-gray);
+    border-radius: 6px;
+    font-size: 14px;
+}
+.my-skills-box span:not(:last-child){
+    margin-right: 5px;
+}
+
+
+
+
+.latest-avtivities{
+    flex-grow: 2;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.latest-avtivities img{
+    width: 64px;
+    margin-right: 10px;
+}
+.latest-avtivities p:nth-child(2){
+    margin-top: 10px;
+    color: #888;
+}
+.lat-activ-container{
+    margin-top: 20px;
+}
+.lat-activ-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+.lat-activ-box:not(:last-child){
+    border-bottom: solid 1px var(--main-gray);
+}
+.lat-activ-box .info{
+    display: flex;
+    align-items: center;
+}
+.lat-activ-box .info .text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.lat-activ-box .info .text-area span:last-child{
+    color: #888;
+}
+.lat-activ-box .date{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.lat-activ-box .date span:last-child{
+    color: #888;
+}
+@media(max-width: 987px){
+    .profile-flex-section{
+        flex-direction: column;
+    }
+    .profile-flex-section .my-skills .my-skills-box{
+        text-align: center;
+    }
+}
+@media(max-width: 670px){
+    .lat-activ-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .lat-activ-box .info{
+        flex-direction: column;
+        text-align: center;
+    }
+    .lat-activ-box .info .text-area{
+        align-items: center;
+        margin: 20px 0px;
+    }
+}
+/* End of My Skills Window */
 /* End of Profile Settings */
+
+/* Start of Projects Window */
+/* End of Projects Window */
