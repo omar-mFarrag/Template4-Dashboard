@@ -1862,3 +1862,103 @@ input:focus{
     }
 }
 /* End of Projects Page */
+/* Start of Courses Page  */
+.courses-grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+.courses-grid-container .course-box{
+    background-color: white;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+.courses-grid-container .course-box .image{
+    width: 100%;
+}
+.person-course-image{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 50%;
+    border: solid white 2px;
+}
+.course-box .course-text{
+    padding: 20px;
+}
+.course-box p{
+    color: #888;
+    margin: 15px 0px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.course-box .course-info{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px var(--main-gray);
+    position: relative;
+}
+
+.course-box .course-info .buy{
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 5px;
+}
+.course-box .course-info .buy i{
+    font-size: 14px;
+}
+.course-box .course-info span:last-child{
+    color: #888;
+    font-size: 14px;
+}
+.course-box .course-info span:not(:last-child){
+    font-size: 13px;
+    background-color: var(--main-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.course-box .course-info .buy span{
+    font-size: 12px;
+}
+@media(max-width: 875px){
+    .courses-grid-container{
+        gap: 10px;
+        margin: 10px;
+        grid-template-columns: repeat(auto-fill, calc(50% - 30px));
+        justify-content: center;
+    }
+}
+@media(max-width: 584px){
+    .courses-grid-container{
+        gap: 10px;
+        margin: 10px;
+        grid-template-columns: repeat(auto-fill, 400px);
+        justify-content: center;
+    }
+}
+@media(max-width: 495px){
+    .courses-grid-container{
+        gap: 10px;
+        margin: 10px;
+        grid-template-columns: repeat(auto-fill, 100%);
+        justify-content: center;
+    }
+}
+/* End of Courses Page  */
+/* Start of Friends Page */
+
+/* End of Friends Page */
