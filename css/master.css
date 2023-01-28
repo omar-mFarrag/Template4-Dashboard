@@ -1960,5 +1960,116 @@ input:focus{
 }
 /* End of Courses Page  */
 /* Start of Friends Page */
-
+.friends-grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 20px;
+    gap: 20px;
+}
+@media(max-width: 767px){
+    .friends-grid-container{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        margin: 10px;
+    }
+}
+.friend-box{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+.friend-box .friend-header i{
+    position: absolute;
+    background-color: var(--main-gray);
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(102, 102, 102);
+    transition: .3s;
+    cursor: pointer;
+}
+.friend-box .friend-header i:first-child{
+    top: 10px;
+    left: 10px;
+}
+.friend-box .friend-header i:not(:first-child){
+    top: 10px;
+    left: 10px;
+    transform: translateX(calc(100% + 5px));
+}
+.friend-box .friend-header i:hover{
+    background-color: var(--main-blue);
+    color: white;
+}
+.friend-box .friend-header .f-photo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.friend-box .friend-header img{
+    width: 100px;
+    margin: 10px 0px;
+    border-radius: 50%;
+}
+.friend-box .friend-header p{
+    margin: 5px 0px 15px;
+    color: #888;
+    font-size: 14px;
+    font-weight: normal;
+}
+.friend-box .friend-info{
+    padding: 15px 0px;
+    margin: 15px 0px;
+    border-top: 1px solid var(--main-gray);
+    border-bottom: 1px solid var(--main-gray);
+    position: relative;
+}
+.friend-box .friend-info div{
+    margin-bottom: 10px;
+}
+.friend-box .friend-info div span{
+    font-size: 14px;
+}
+.friend-box .friend-info div i{
+    margin-right: 5px;
+    font-size: 15px;
+}
+.friend-box .friend-info .vip{
+    color: var(--main-orange);
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-weight: bolder;
+    transform: translateY(-50%);
+    opacity: .2;
+}
+.friend-box .friendship-controler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.friend-box .friendship-controler span{
+    font-size: 13px;
+    color: #888;
+}
+.friend-box .friendship-controler button{
+    font-size: 13px;
+    border: none;
+    background-color: var(--main-blue);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.friend-box .friendship-controler button:last-child{
+    background-color: var(--main-red);
+}
 /* End of Friends Page */
