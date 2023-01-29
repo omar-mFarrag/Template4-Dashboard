@@ -1533,6 +1533,11 @@ input:focus{
     position: relative;
     padding: 20px;
 }
+@media (max-width: 767px) {
+    .profile-page-content{
+        padding: 10px;
+    }
+}
 .profile-settings{
     background-color: white;
     width: 100%;
@@ -1663,6 +1668,12 @@ input:focus{
     gap: 20px;
     margin-top: 20px;
 }
+@media (max-width: 767px) {
+    .profile-flex-section{
+        margin-top: 10px;
+        gap: 10px;
+    }
+}
 .my-skills{
     background-color: white;
     padding: 20px;
@@ -1775,6 +1786,12 @@ input:focus{
     gap: 20px;
     margin: 20px;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+    .projects-grid-container{
+        gap: 10px;
+        margin: 10px;
+    }
 }
 .projects-grid-container .project{
     background-color: white;
@@ -2073,3 +2090,330 @@ input:focus{
     background-color: var(--main-red);
 }
 /* End of Friends Page */
+/* Start of files page */
+.files-flex-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 20px;
+}
+@media(max-width: 767px){
+    .files-flex-container{
+        flex-direction: column-reverse;
+        margin: 10px;
+        gap: 20px;
+    }
+}
+.files-grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    flex: 1 1 0%;
+}
+@media(max-width: 767px){
+    .files-grid-container{
+        gap: 10px;
+    }
+}
+.files-grid-container .file-box{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.files-grid-container .file-box i{
+    color: #888;
+    transition: .3s;
+    cursor: pointer;
+}
+.files-grid-container .file-box i:hover{
+    color: var(--main-blue);
+}
+.files-grid-container .file-box .file-photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.files-grid-container .file-box img{
+    width: 64px;
+    transition: .3s;
+}
+.files-grid-container .file-box:hover img{
+    transform: rotate(10deg);
+}
+.files-grid-container .file-box .file-photo p{
+    margin: 20px 0px;
+}
+.files-grid-container .file-box span{
+    color: #888;
+    font-size: 14px;
+}
+.files-grid-container .file-box .file-info{
+    padding: 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    border-top: solid 1px var(--main-gray);
+    margin-top: 15px;
+}
+.files-statistics{
+    min-width: 260px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    height: fit-content;
+    position: relative;
+}
+.files-statistics .file-sta-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.file-sta-container .files-sta-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid var(--main-gray);
+    border-radius: 6px;
+    padding: 10px;
+}
+.files-sta-box .file-sta-info{
+    display: flex;
+}
+.files-sta-box .file-sta-info i{
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(212, 100%, 50%, 0.3);
+    color: var(--main-blue);
+    margin-right: 5px;
+}
+.files-sta-box:nth-child(2) .file-sta-info i{
+    background-color: hsla(142, 71%, 45%, 0.3);
+    color: var(--main-green);
+}
+.files-sta-box:nth-child(3) .file-sta-info i{
+    background-color: hsla(4, 90%, 58%, 0.3);
+    color: var(--main-red);
+}
+.files-sta-box:nth-child(4) .file-sta-info i{
+    background-color: hsla(38, 92%, 50%, 0.3);
+    color: var(--main-orange);
+}
+.files-sta-box .file-sta-info .text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.files-sta-box .file-sta-info .text-area span{
+    font-size: 13px;
+}
+.files-sta-box .file-sta-info .text-area span:last-child{
+    color: #888;
+    font-weight: normal;
+}
+.files-sta-box span:last-child{
+    color: #888;
+    font-size: 13px;
+    align-self: center;
+}
+.files-statistics a{
+    background-color: var(--main-blue);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 10px auto 0px;
+    display: block;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: .3s;
+    display: flex;
+    gap: 10px;
+}
+.files-statistics a:hover{
+    background-color: var(--alt-blue);
+}
+.files-statistics a:hover i{
+    animation: UpAndDown infinite ease-in-out .5s;
+}
+@keyframes UpAndDown {
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+}
+/* End of files page */
+/* Start of Plans Page */
+.plans-grid-container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+}
+@media(max-width:767px){
+    .plans-grid-container{
+        margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    }
+}
+.plans-grid-container .plan-box{
+    background-color: white;
+    padding: 20px;
+}
+.plan-header-frame{
+    width: 100%;
+    border: solid 3px;
+    padding: 3px;
+}
+.plan-box:nth-child(1) .plan-header-frame{
+    border-color: var(--main-green);
+}
+.plan-box:nth-child(2) .plan-header-frame{
+    border-color: var(--main-blue);
+}
+.plan-box:nth-child(3) .plan-header-frame{
+    border-color: var(--main-orange);
+}
+.plan-box:nth-child(1) .plan-header{
+    background-color: var(--main-green);
+}
+.plan-box:nth-child(2) .plan-header{
+    background-color: var(--main-blue);
+}
+.plan-box:nth-child(3) .plan-header{
+    background-color: var(--main-orange);
+}
+
+.plan-box .plan-header{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+.plan-box .plan-header h2{
+    font-weight: bolder;
+}
+.plan-box .plan-header span{
+    font-size: 40px;
+    position: relative;
+    width: fit-content;
+}
+.plan-box .plan-header span::before{
+    content: "$";
+    position: absolute;
+    font-size: 25px;
+    height: fit-content;
+    transform: translateY(-30%);
+    left: -20px;
+}
+
+.plan-box ul{
+    list-style: none;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.plan-box ul li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px 15px 30px;
+    border-bottom: solid var(--main-gray) 1px;
+    position: relative;
+}
+.plan-box:nth-child(1) ul li:before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f00d";
+    font-weight: 900;
+    position: absolute;
+    left: 0px;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--main-red);
+}
+.plan-box:nth-child(1) ul li:nth-child(1):before{
+    content: "\f00c";
+    color: var(--main-green);
+}
+.plan-box:nth-child(1) ul li:nth-child(2):before{
+    content: "\f00c";
+    color: var(--main-green);
+}
+.plan-box:nth-child(1) ul li:nth-child(3):before{
+    content: "\f00c";
+    color: var(--main-green);
+}
+.plan-box:nth-child(2) ul li:before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    font-weight: 900;
+    position: absolute;
+    left: 0px;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--main-green);
+}
+.plan-box:nth-child(2) ul li:nth-last-child(1):before{
+    color: var(--main-red);
+    content: "\f00d";
+}
+.plan-box:nth-child(2) ul li:nth-last-child(2):before{
+    color: var(--main-red);
+    content: "\f00d";
+}
+.plan-box:nth-child(3) ul li:before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    font-weight: 900;
+    position: absolute;
+    left: 0px;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--main-green);
+}
+.plan-box ul li i{
+    color: #888;
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+}
+.plan-box a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background-color: var(--main-green);
+    height: fit-content;
+    width: fit-content;
+    display: block;
+    border-radius: 6px;
+}
+.plan-box:nth-child(2) a{
+    background-color: var(--main-blue);
+}
+.plan-box:nth-child(3) a{
+    background-color: var(--main-orange);
+}
+/* End of Plans Page */
